@@ -8,7 +8,11 @@ const ItemProducto = () => {
       <td>café</td>
       <td>$700</td>
       <td>
-        https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+        <div className="row">
+          <div className="col-5 text-truncate">
+            https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+          </div>
+        </div>
       </td>
       <td>Bebida caliente</td>
       <td>
