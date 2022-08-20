@@ -1,20 +1,20 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const ItemProducto = () => {
+const ItemProducto = (props) => {
   return (
     <tr>
       <td>1</td>
-      <td>café</td>
-      <td>$700</td>
+      <td>{props.product.nombreProdcuto}</td>
+      <td>{props.product.precio}</td>
       <td>
         <div className="row">
           <div className="col-5 text-truncate">
-            https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+          {props.product.imagen}
           </div>
         </div>
       </td>
-      <td>Bebida caliente</td>
+      <td>{props.product.categoria}</td>
       <td>
         <Button variant="warning">Editar</Button>
         <Button variant="danger">Borrar</Button>

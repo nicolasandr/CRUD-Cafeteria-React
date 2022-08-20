@@ -3,21 +3,21 @@
     {
         "nombreProdcuto": "cafe",
         "precio":"350",
-        "iamgen":"https://...",
+        "imagen":"https://...",
         "categoria":"bebida-caliente",
         "id":1
     },
     {
         "nombreProdcuto": "Licuado",
         "precio":"700",
-        "iamgen":"https://...",
-        "categoria":"bebida-caliente",
+        "imagen":"https://...",
+        "categoria":"bebida-fria",
         "id":2
     },
     {
         "nombreProdcuto": "Medialuna",
         "precio":"100",
-        "iamgen":"https://...",
+        "imagen":"https://...",
         "categoria":"dulce",
         "id":3
     }
