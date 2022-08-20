@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Table, Button } from "react-bootstrap";
 import ItemProducto from "./ItemProducto";
+import { Link } from "react-router-dom";
 
 const AdministrarProductos = () => {
   const URL = process.env.REACT_APP_API_CAFETERIA;
@@ -30,7 +31,7 @@ const AdministrarProductos = () => {
     <section className="container">
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4 ">Poductos disponibles</h1>
-        <Button variant="primary">Agregar</Button>
+        <Link to='/administrar/producto/crear' className='btn btn-primary'>Agregar</Link>
       </div>
 
       <hr />
