@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Alert } from 'react-bootstrap';
 import {
     cantidadCaracteres,
     validarCategoria,
@@ -13,6 +13,7 @@ const CrearProductos = () => {
     const [precio, setPrecio] = useState(0);
     const [imagen, setImagen] = useState('');
     const [categoria, setCategoria] = useState('');
+    const [msjError, SetMsjerror] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,8 +25,10 @@ const CrearProductos = () => {
             validarCategoria(categoria)
         ) {
             console.log('los datos son correctos crear el objeto');
+            SetMsjerror(false);
         } else {
             console.log('solicitar que guarde los datos correctamente');
+            SetMsjerror(true);
         }
         //crear un objeto
         //enviar peticion a json-server
@@ -74,6 +77,11 @@ const CrearProductos = () => {
                     Guardar
                 </Button>
             </Form>
+            {msjError ? (
+                <Alert variant='danger' className="mt-4">
+                    Debe corregir los datos
+                </Alert>
+            ) : null}
         </section>
     );
 };
