@@ -1,7 +1,8 @@
-import { type } from '@testing-library/user-event/dist/type';
+
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 import {
     cantidadCaracteres,
     validarCategoria,
@@ -18,6 +19,9 @@ const CrearProductos = () => {
     const [msjError, SetMsjerror] = useState(false);
     //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_CAFETERIA;
+    // inicializar useNavigate
+    const navegacion = useNavigate();
+
     const handleSubmit =async (e) => {
         e.preventDefault();
         //validar los datos
@@ -53,6 +57,8 @@ const CrearProductos = () => {
                         'El producto fue agregado correctamente!',
                         'success'
                     );
+                    //redireccionar a la pagina de administracion
+                    navegacion('/administrar');
 
                 }
 
