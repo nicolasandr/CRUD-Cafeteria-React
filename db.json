@@ -1,25 +1,39 @@
 {
-"productos":[
+  "productos": [
     {
-        "nombreProdcuto": "cafe",
-        "precio":"350",
-        "imagen":"https://...",
-        "categoria":"bebida-caliente",
-        "id":1
+      "nombreProdcuto": "cafe",
+      "precio": "350",
+      "imagen": "https://...",
+      "categoria": "bebida-caliente",
+      "id": 1
     },
     {
-        "nombreProdcuto": "Licuado",
-        "precio":"700",
-        "imagen":"https://...",
-        "categoria":"bebida-fria",
-        "id":2
+      "nombreProdcuto": "Licuado",
+      "precio": "700",
+      "imagen": "https://...",
+      "categoria": "bebida-fria",
+      "id": 2
     },
     {
-        "nombreProdcuto": "Medialuna",
-        "precio":"100",
-        "imagen":"https://...",
-        "categoria":"dulce",
-        "id":3
+      "nombreProdcuto": "Medialuna",
+      "precio": "100",
+      "imagen": "https://...",
+      "categoria": "dulce",
+      "id": 3
+    },
+    {
+      "nombreProdcuto": "licuado",
+      "precio": "200",
+      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
+      "categoria": "dulce",
+      "id": 4
+    },
+    {
+      "nombreProdcuto": "brownieee",
+      "precio": "333",
+      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
+      "categoria": "dulce",
+      "id": 5
     }
-]
+  ]
 }
