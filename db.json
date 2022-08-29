@@ -1,46 +1,18 @@
 {
   "productos": [
     {
-      "nombreProdcuto": "cafe",
-      "precio": "350",
-      "imagen": "https://...",
-      "categoria": "bebida-caliente",
-      "id": 1
-    },
-    {
-      "nombreProdcuto": "Licuado",
-      "precio": "700",
-      "imagen": "https://...",
+      "nombreProducto": "licuado",
+      "precio": "388",
+      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
       "categoria": "bebida-fria",
-      "id": 2
-    },
-    {
-      "nombreProdcuto": "Medialuna",
-      "precio": "100",
-      "imagen": "https://...",
-      "categoria": "dulce",
-      "id": 3
-    },
-    {
-      "nombreProdcuto": "licuado",
-      "precio": "200",
-      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
-      "categoria": "dulce",
-      "id": 4
-    },
-    {
-      "nombreProdcuto": "brownieee",
-      "precio": "333",
-      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
-      "categoria": "dulce",
-      "id": 5
-    },
-    {
-      "nombreProdcuto": "1kg pan",
-      "precio": "200",
-      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu9Uaky2LryK5C2ThZTgdXpvR2N5h2URKMjI3Yz0uw=s900-c-k-c0x00ffffff-no-rj",
-      "categoria": "dulce",
       "id": 6
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/4109850/pexels-photo-4109850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "bebida-caliente",
+      "id": 7
     }
   ]
 }

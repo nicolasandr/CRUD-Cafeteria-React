@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AdministrarProductos = () => {
     const URL = process.env.REACT_APP_API_CAFETERIA;
-    console.log(URL);
-
+    // console.log(URL);
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
@@ -14,23 +13,23 @@ const AdministrarProductos = () => {
     }, []);
 
     const consultarAPI = async () => {
-        //peticion get
+        // peticion get
         try {
             //codigo que quiero ejecutar
             const respuesta = await fetch(URL);
             const listaProductos = await respuesta.json();
 
             setProductos(listaProductos);
-            //estructura por si se rompe todo
         } catch (error) {
             console.log(error);
-            //agregar mensaje intuitivo para usuario
+            //agregar un mensaje intuitivo para el usuario
         }
     };
+
     return (
         <section className="container">
             <div className="d-flex justify-content-between align-items-center mt-5">
-                <h1 className="display-4 ">Poductos disponibles</h1>
+                <h1 className="display-4 ">Productos disponibles</h1>
                 <Link
                     to="/administrar/producto/crear"
                     className="btn btn-primary"
@@ -38,7 +37,6 @@ const AdministrarProductos = () => {
                     Agregar
                 </Link>
             </div>
-
             <hr />
             <Table responsive striped bordered hover>
                 <thead>
@@ -48,6 +46,7 @@ const AdministrarProductos = () => {
                         <th>Precio</th>
                         <th>URL de Imagen</th>
                         <th>Categoria</th>
+                        <th>Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,7 +54,8 @@ const AdministrarProductos = () => {
                     {productos.map((producto) => (
                         <ItemProducto
                             key={producto.id}
-                            product={producto}
+                            producto={producto}
+                            consultarAPI={consultarAPI}
                         ></ItemProducto>
                     ))}
                 </tbody>
