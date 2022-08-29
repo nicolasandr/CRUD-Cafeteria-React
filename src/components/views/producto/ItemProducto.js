@@ -52,7 +52,7 @@ const ItemProducto = ({ producto, consultarAPI }) => {
             <td>{categoria}</td>
             <td>
                 <Link
-                    to={`/administrar/editar/${id}`}
+                    to={`/administrar/producto/editar/${id}`}
                     className="btn btn-warning"
                 >
                     Editar
