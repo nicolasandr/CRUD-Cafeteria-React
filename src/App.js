@@ -8,6 +8,7 @@ import EditarProducto from './components/views/producto/EditarProducto';
 import Error404 from './components/views/Error404';
 import Menu from './components/common/Menu';
 import Footer from './components/common/Footer';
+import Detalle from './components/views/producto/Detalle';
 
 const App = () => {
     return (
@@ -35,6 +36,11 @@ const App = () => {
                         exact
                         path="*"
                         element={<Error404></Error404>}
+                    ></Route>
+                    <Route
+                        exact
+                        path="/Detalle/:id"
+                        element={<Detalle></Detalle>}
                     ></Route>
                 </Routes>
                 <Footer></Footer>

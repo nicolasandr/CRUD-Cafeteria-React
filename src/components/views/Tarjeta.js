@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card,Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Tarjeta = ({producto}) => {
         const { nombreProducto, id, categoria, imagen, precio } = { ...producto,};
@@ -19,7 +20,9 @@ const Tarjeta = ({producto}) => {
                                 <h2>{precio}</h2>
                             </div>
                             <div className="col-6">
-                                <Button variant="danger">Ver Mas</Button>
+                                <Link to={`/Detalle/${id}`} className="btn btn-primary">
+                                    Ver Mas
+                                </Link>
                             </div>
                         </div>
                     </Card.Body>
