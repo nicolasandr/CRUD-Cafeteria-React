@@ -12,7 +12,7 @@ import {
 
 const CrearProductos = () => {
     // crear states
-    const [nombreProdcuto, seTNombreProdcuto] = useState('');
+    const [nombreProducto, seTNombreProdcuto] = useState('');
     const [precio, setPrecio] = useState(0);
     const [imagen, setImagen] = useState('');
     const [categoria, setCategoria] = useState('');
@@ -26,7 +26,7 @@ const CrearProductos = () => {
         e.preventDefault();
         //validar los datos
         if (
-            cantidadCaracteres(nombreProdcuto) &&
+            cantidadCaracteres(nombreProducto) &&
             validarPrecio(precio) &&
             validarURL(imagen) &&
             validarCategoria(categoria)
@@ -35,7 +35,7 @@ const CrearProductos = () => {
             SetMsjerror(false);
             //crear un objeto
             const nuevoPorducto={
-                nombreProdcuto: nombreProdcuto,
+                nombreProducto: nombreProducto,
                 precio:precio,
                 imagen:imagen,
                 categoria:categoria
@@ -120,6 +120,7 @@ const CrearProductos = () => {
                     Debe corregir los datos
                 </Alert>
             ) : null}
+            
         </section>
     );
 };
