@@ -5,6 +5,13 @@ export const cantidadCaracteres = (input) => {
         return false;
     }
 };
+export const validarDetalleProducto = (input) => {
+     if (input.length >= 10 && input.length <= 800) {
+         return true;
+     } else {
+         return false;
+     }
+}
 
 export const validarPrecio = (dato) => {
     let patron = /^[\d]{1,4}$/;

@@ -8,6 +8,7 @@ import {
     validarCategoria,
     validarPrecio,
     validarURL,
+    validarDetalleProducto,
 } from './helpers';
 
 const CrearProductos = () => {
@@ -17,6 +18,7 @@ const CrearProductos = () => {
     const [imagen, setImagen] = useState('');
     const [categoria, setCategoria] = useState('');
     const [msjError, SetMsjerror] = useState(false);
+    const [detalleProducto,seTDetalleProdcuto] = useState('');
     //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_CAFETERIA;
     // inicializar useNavigate
@@ -29,28 +31,30 @@ const CrearProductos = () => {
             cantidadCaracteres(nombreProducto) &&
             validarPrecio(precio) &&
             validarURL(imagen) &&
-            validarCategoria(categoria)
+            validarCategoria(categoria) &&
+            validarDetalleProducto(detalleProducto)
         ) {
             console.log('los datos son correctos crear el objeto');
             SetMsjerror(false);
             //crear un objeto
-            const nuevoPorducto={
+            const nuevoPorducto = {
                 nombreProducto: nombreProducto,
-                precio:precio,
-                imagen:imagen,
-                categoria:categoria
-            }
+                precio: precio,
+                imagen: imagen,
+                categoria: categoria,
+                detalleProducto: detalleProducto,
+            };
             console.log(nuevoPorducto);
             //enviar peticion a json-server (API)
-            try{
-                const respuesta =await fetch(URL,{
-                    method:'POST',
-                    headers:{
-                        "Content-Type":"application/json"
+            try {
+                const respuesta = await fetch(URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(nuevoPorducto)
+                    body: JSON.stringify(nuevoPorducto),
                 });
-                if(respuesta.status === 201){
+                if (respuesta.status === 201) {
                     //mostrar mensaje que todo salio bien
                     Swal.fire(
                         'Producto creado!',
@@ -59,11 +63,9 @@ const CrearProductos = () => {
                     );
                     //redireccionar a la pagina de administracion
                     navegacion('/administrar');
-
                 }
-
-            }catch(error){
-                console.log(error)
+            } catch (error) {
+                console.log(error);
                 //mostrar mensaje al ususario
             }
         } else {
@@ -83,6 +85,14 @@ const CrearProductos = () => {
                         type="text"
                         placeholder="Ej: Cafe"
                         onChange={(e) => seTNombreProdcuto(e.target.value)}
+                    />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formDetalleProdcuto">
+                    <Form.Label>Detalle de producto*</Form.Label>
+                    <Form.Control
+                        type="text"
+                        placeholder="Ej: Descripcion de producto"
+                        onChange={(e) => seTDetalleProdcuto(e.target.value)}
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formPrecio">
@@ -116,11 +126,10 @@ const CrearProductos = () => {
                 </Button>
             </Form>
             {msjError ? (
-                <Alert variant='danger' className="mt-4">
+                <Alert variant="danger" className="mt-4">
                     Debe corregir los datos
                 </Alert>
             ) : null}
-            
         </section>
     );
 };

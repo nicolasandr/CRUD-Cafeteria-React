@@ -1,25 +1,52 @@
 {
   "productos": [
     {
-      "nombreProducto": "licuado",
-      "imagen": "https://images.pexels.com/photos/434295/pexels-photo-434295.jpeg",
-      "precio": "800",
-      "categoria": "bebida-fria",
-      "id": 6
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "350",
+      "nombreProducto": "Café Clasico",
+      "detalleProducto": "1890 BLEND PROPIO. Tueste Natural.  100% Arábica lavado  Colombia, Tanzania y Zambia.  Combinamos la suavidad del Colombia Supremo, el cuerpo y la fuerza del Tanzania AA con el peculiar sabor del Zambia AA para crear un café que conmemora nuestro 120 Aniversario. Intenso y con cuerpo, con un sabor tradicional y embriagador, levemente afrutado, que te transportará a 1890.  Hemos combinado grandes cafés arábicas en este 1890 para conseguir una taza armónica, con mucho cuerpo y un sabor pleno y levemente afrutado.  Perfecto para todas las cafeteras y para tomar solo o con leche.",
       "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": "350",
       "categoria": "bebida-caliente",
       "id": 7
     },
     {
-      "nombreProducto": "brownie",
-      "precio": "50",
+      "nombreProducto": "Brownie",
+      "detalleProducto": "Un brownie es un bizcocho de chocolate pequeño, típico de la gastronomía de Estados Unidos. Se llama así por su color marrón oscuro, o brown en inglés. A veces se cubre con jarabe espeso de chocolate y puede llevar dentro trocitos de nueces, chocolate butterscotch o mantequilla de maní.",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": "120",
       "categoria": "dulce",
       "id": 8
+    },
+    {
+      "nombreProducto": "Té Negro/Rojo",
+      "detalleProducto": "El té es la infusión de las hojas y brotes de la planta del té.​La popularidad de esta bebida es solamente sobrepasada por el agua.​ Su sabor es fresco, ligeramente amargo y astringente; este gusto es agradable para mucha gente",
+      "imagen": "https://images.pexels.com/photos/11182809/pexels-photo-11182809.jpeg?cs=srgb&dl=pexels-feyza-da%C5%9Ftan-11182809.jpg&fm=jpg",
+      "precio": "150",
+      "categoria": "bebida-caliente",
+      "id": 9
+    },
+    {
+      "nombreProducto": "Licuado de frutilla",
+      "precio": "280",
+      "imagen": "https://images.pexels.com/photos/2045362/pexels-photo-2045362.jpeg?cs=srgb&dl=pexels-alexander-mils-2045362.jpg&fm=jpg",
+      "categoria": "bebida-fria",
+      "detalleProducto": "Las fresas son ricas en fibra, antioxidantes, vitaminas y minerales, lo que ayuda a mantener un intestino saludable. Los antioxidantes ayudan en la absorción de nutrientes clave, además de las proteínas y el hierro. La fibra juega un papel fundamental para ayudar a hacer la digestión y regularla",
+      "id": 10
+    },
+    {
+      "nombreProducto": "Churros ",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/1730630/pexels-photo-1730630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "dulce",
+      "detalleProducto": "El churro es una fruta de sartén hecha de agua, harina (de trigo generalmente, aunque puede ser de otro origen), aceite y sal. Pueden tener formas de bastón, en lazos o rulos (espirales). En sus variantes modernas, a veces pueden tener relleno o estar rebozados de azúcar, chocolate, crema pastelera o dulce de leche.",
+      "id": 11
+    },
+    {
+      "nombreProducto": "Postre supremo",
+      "precio": "400",
+      "imagen": "https://images.pexels.com/photos/2638026/pexels-photo-2638026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "dulce",
+      "detalleProducto": "Las ventajas que tienen los postres: Los dulces alegran la vida y aportan energía, además las personas necesitan glucosa para la salud. Los dulces mejoran el humor, pues al comerlo la feniletilamina que contienen hacen que nuestro cerebro secrete serotonina y endorfinas, que nos producen sensación de bienestar",
+      "id": 12
     }
   ]
 }

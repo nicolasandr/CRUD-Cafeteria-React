@@ -15,6 +15,7 @@ const EditarProducto = () => {
     const nombreProductoRef = useRef('');
     const precioRef = useRef(0);
     const imagenRef = useRef('');
+    const detalleProductoRef = useRef('');
     //navigate
     const navegacion = useNavigate();
 
@@ -46,6 +47,7 @@ const EditarProducto = () => {
             //crear un objeto con los datos modificados
             const productoEditar = {
                 nombreProducto: nombreProductoRef.current.value,
+                detalleProducto:detalleProductoRef.current.value,
                 imagen: imagenRef.current.value,
                 precio: precioRef.current.value,
                 categoria: producto.categoria,
@@ -93,6 +95,17 @@ const EditarProducto = () => {
                         ref={nombreProductoRef}
                     />
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formNombreProdcuto">
+                    <Form.Label>Detalle de producto*</Form.Label>
+                    <Form.Control
+                        type="text"
+                        placeholder="Ej: Cafe"
+                        defaultValue={producto.detalleProducto}
+                        ref={detalleProductoRef}
+                    />
+                </Form.Group>
+
                 <Form.Group className="mb-3" controlId="formPrecio">
                     <Form.Label>Precio*</Form.Label>
                     <Form.Control
