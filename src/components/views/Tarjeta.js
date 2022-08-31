@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card,Button } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Tarjeta = ({producto}) => {
-        const { nombreProducto, id, categoria, imagen, precio } = { ...producto,};
+        const { nombreProducto, id, imagen, precio } = { ...producto,};
 
         return (
             <div className="col-12 col-md-3 ">

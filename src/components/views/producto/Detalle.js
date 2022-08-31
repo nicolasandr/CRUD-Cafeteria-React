@@ -25,7 +25,7 @@ const Detalle = () => {
     };
 
     return (
-        <div className="container d-flex justify-content-center my-auto">
+        <div className="container d-flex justify-content-center py-5 my-auto">
             <Card className="flex-md-row">
                 <Card.Img src={producto.imagen} className="w-50" />
                 <Card.Body>
