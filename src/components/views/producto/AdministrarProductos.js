@@ -27,8 +27,8 @@ const AdministrarProductos = () => {
     };
 
     return (
-        <section className="container">
-            <div className="d-flex justify-content-between align-items-center mt-5">
+        <section className="container py-5">
+            <div className="d-flex justify-content-between align-items-center">
                 <h1 className="display-4 ">Productos disponibles</h1>
                 <Link
                     to="/administrar/producto/crear"

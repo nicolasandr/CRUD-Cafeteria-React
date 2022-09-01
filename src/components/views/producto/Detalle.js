@@ -37,12 +37,10 @@ const Detalle = () => {
                         {producto.categoria}
                     </p>
                     <Card.Text className="py-3">
-                        <p>
-                            <h4>Descripcion:</h4>
-                            {producto.detalleProducto}
-                        </p>
+                        <h4>Descripcion:</h4>
+                        {producto.detalleProducto}
+                        <h4>Precio: $ {producto.precio}</h4>
                     </Card.Text>
-                    <h4>Precio: $ {producto.precio}</h4>
                 </Card.Body>
             </Card>
         </div>
