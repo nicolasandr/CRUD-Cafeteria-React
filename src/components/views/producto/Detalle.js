@@ -36,11 +36,12 @@ const Detalle = () => {
                     <p className="badge bg-success fs-5">
                         {producto.categoria}
                     </p>
+
+                    <h4>Descripcion:</h4>
                     <Card.Text className="py-3">
-                        <h4>Descripcion:</h4>
                         {producto.detalleProducto}
-                        <h4>Precio: $ {producto.precio}</h4>
                     </Card.Text>
+                    <h4>Precio: $ {producto.precio}</h4>
                 </Card.Body>
             </Card>
         </div>
