@@ -148,11 +148,6 @@ const EditarProducto = () => {
                     Guardar
                 </Button>
             </Form>
-            {/* {msjError ? (
-        <Alert variant="danger" className="mt-4">
-          Debe corregir los datos
-        </Alert>
-      ) : null} */}
         </section>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
+import './ItemProducto.css'
 
 const ItemProducto = ({ producto, consultarAPI }) => {
     const { nombreProducto, _id, categoria, imagen, precio } = { ...producto };
@@ -45,15 +46,16 @@ const ItemProducto = ({ producto, consultarAPI }) => {
     return (
         <tr>
             <td>{_id}</td>
-            {/* <td>{props.producto.nombreProducto}</td> */}
             <td>{nombreProducto}</td>
             <td>$ {precio}</td>
-            <td>{imagen}</td>
+            <td>
+                <div className="truncate">{imagen}</div>
+            </td>
             <td>{categoria}</td>
             <td>
                 <Link
                     to={`/administrar/producto/editar/${_id}`}
-                    className="btn btn-warning"
+                    className="btn btn-warning mx-2"
                 >
                     Editar
                 </Link>
