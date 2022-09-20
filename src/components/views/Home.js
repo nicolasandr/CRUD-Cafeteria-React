@@ -25,7 +25,7 @@ const Home = () => {
     };
 
     return (
-        <section className="container">
+        <section className="container py-4">
             <h1 className="display-4">pagina principal</h1>
             <hr />
 

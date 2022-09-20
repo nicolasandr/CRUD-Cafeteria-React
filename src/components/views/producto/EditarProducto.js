@@ -84,8 +84,8 @@ const EditarProducto = () => {
     };
 
     return (
-        <section className="container">
-            <h1 className="display-4 mt-5">Editar producto</h1>
+        <section className="container py-5">
+            <h1 className="display-4">Editar producto</h1>
             <hr />
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formNombreProdcuto">
@@ -145,7 +145,7 @@ const EditarProducto = () => {
                     </Form.Select>
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Guardar
+                    Editar
                 </Button>
             </Form>
         </section>
