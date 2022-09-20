@@ -53,7 +53,7 @@ const AdministrarProductos = () => {
                     {/* aqui tengo que hacer un map */}
                     {productos.map((producto) => (
                         <ItemProducto
-                            key={producto.id}
+                            key={producto._id}
                             producto={producto}
                             consultarAPI={consultarAPI}
                         ></ItemProducto>

@@ -25,13 +25,13 @@ const Home = () => {
     };
 
     return (
-        <section className="container py-5">
+        <section className="container">
             <h1 className="display-4">pagina principal</h1>
             <hr />
 
-            <div className="row">
+            <div className="row mb-5">
                 {productos.map((producto) => (
-                    <Tarjeta key={producto.id} producto={producto}></Tarjeta>
+                    <Tarjeta key={producto._id} producto={producto}></Tarjeta>
                 ))}
             </div>
         </section>

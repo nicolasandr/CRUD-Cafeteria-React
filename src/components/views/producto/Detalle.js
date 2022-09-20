@@ -16,7 +16,7 @@ const Detalle = () => {
             const respuesta = await fetch(URL);
             const listaProductos = await respuesta.json();
             const encontrado = listaProductos.find(
-                (item) => item.id === parseInt(id)
+                (item) => item._id === id
             );
             setProducto(encontrado);
         } catch (error) {

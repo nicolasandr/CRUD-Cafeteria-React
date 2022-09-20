@@ -3,19 +3,19 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Tarjeta = ({ producto }) => {
-    const { nombreProducto, id, imagen, precio, detalleProducto } = {
+    const { nombreProducto, _id, imagen, precio, detalleProducto } = {
         ...producto,
     };
 
     return (
-        <div className="col-12 col-md-3 py-3 ">
-            <Card style={{ width: '18rem' }}>
+        <div className="col-6 col-md-4 col-lg-3 mt-4 ">
+            <Card className="h-100">
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
                     <Card.Title>{nombreProducto}</Card.Title>
                     <div className="row">
                         <Card.Text className="col-10 text-truncate pb-4">
-                           {detalleProducto}
+                            {detalleProducto}
                         </Card.Text>
                     </div>
 
@@ -25,7 +25,7 @@ const Tarjeta = ({ producto }) => {
                         </div>
                         <div className="col-6">
                             <Link
-                                to={`/Detalle/${id}`}
+                                to={`/Detalle/${_id}`}
                                 className="btn btn-primary"
                             >
                                 Ver Mas

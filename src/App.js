@@ -9,10 +9,11 @@ import Error404 from './components/views/Error404';
 import Menu from './components/common/Menu';
 import Footer from './components/common/Footer';
 import Detalle from './components/views/producto/Detalle';
+import './app.css'
 
 const App = () => {
     return (
-        <section>
+        <section className='body'>
             <BrowserRouter>
                 <Menu></Menu>
                 <Routes>

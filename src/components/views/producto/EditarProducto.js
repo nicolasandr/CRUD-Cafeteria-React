@@ -21,6 +21,8 @@ const EditarProducto = () => {
 
     useEffect(() => {
         consultarAPI();
+        // deshabilitamos la regla para una linea, para evitar la advertencia de la depetendencia faltante
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const consultarAPI = async () => {
